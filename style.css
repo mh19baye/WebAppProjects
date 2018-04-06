@@ -1,0 +1,172 @@
+body{
+  font-family: monospace;
+  background-color: lightgrey;
+}
+
+.rotate{
+  transform: rotate(270deg);
+}
+
+header{
+  background-color: #800020;
+  overflow:auto;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+header img{
+  float:left;
+}
+
+header h1{
+  float:left;
+  font-weight: 400;
+  font-size: 28pt;
+}
+
+header nav{
+  float: right;
+  margin:10px;
+  padding-top: 30px;
+}
+
+nav ul{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav li{
+  float:left;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav li a{
+  display: inline-block;
+  border: 2px solid black;
+  padding: 10px 20px;
+  margin: 0px 5px;
+  color:black;
+  text-decoration:none;
+}
+
+nav li a:hover{
+  background-color: lightgrey;
+  color: white;
+}
+
+main{
+  background-color: white;
+  overflow: auto;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 20px 0px 0px;
+  padding: 20px;
+  box-shadow: 10px 10px;
+  border-radius: 40px;
+}
+
+main h2{
+  text-align:center;
+  background-color: lightgrey;
+  padding: 10px;
+  font-size: 20pt;
+}
+
+main img{
+  margin-left: 160px;
+}
+
+main table{
+  border-collapse: collapse;
+}
+main th, main td{
+  border: 2px solid black;
+}
+
+main th{
+  background-color: #800020;
+  color: lightgrey;
+}
+
+section h3{
+  background-color: #800020;
+  color: lightgrey;
+  font-size: 14pt;
+}
+
+aside{
+  font-size: 10pt;
+  padding: 20px;
+  background-color: beige;
+}
+
+footer{
+  text-align: center;
+}
+
+@media(max-width:833px){
+  nav li a{
+    margin: 10px;
+    padding: 10px;
+  }
+}
+@media(max-width:793px){
+  nav li a{
+    margin: 0px;
+    padding: 0px;
+  }
+}
+@media (min-width:700px){
+  aside{
+    width: 200px;
+    float: right;
+  }
+  main{
+    width: 650px;
+    margin: 100px auto 0px;
+  }
+  header{
+    position: fixed;
+    top:0px;
+    left:0px;
+  }
+}
+
+@media(min-width: 1000px){
+  div#site{
+    width: 975px;
+    margin:auto;
+  }
+  main{
+    float:right;
+    margin: 20px 0px;
+  }
+  header{
+    position:relative;
+    width:300px;
+    float:left;
+    top:20px;
+    border-radius: 40px;
+  }
+  header img{
+    float:none;
+    margin-left: 125px;
+    margin-top: 20px;
+  }
+  footer{
+    width:300x;
+    float:left;
+    clear:left;
+    margin:10px 50px 10px;
+  }
+  header h1{
+    text-align: center;
+  }
+  nav li a{
+    width:180px;
+    margin-top:10px;
+    margin-left: 30px;
+  }
+}
